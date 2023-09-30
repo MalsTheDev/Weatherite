@@ -35,7 +35,7 @@ function App() {
     <div className={`flex items-center flex-col ${weather.main?.temp > 16 ? 'bg-hot' : 'bg-cold'} transition-all h-screen w-screen bg-cover bg-center overflow-x-hidden `}>
       <input value={city} type="text" className='mx-auto mb-20 rounded-b-xl w-64 text-2xl p-2 outline-none focus:bg-white transition-all' placeholder='Town...' onChange={e => setCity(e.target.value)} onKeyPress={search}  />
       {isWeather ?
-      <div className='flex flex-col items-center h-fit w-fit px-12 md:px-24 xl:px-32 bg-black bg-opacity-60 rounded-2xl mb-20'>
+      <div className='flex flex-col items-center h-fit w-fit px-5 md:px-24 xl:px-32 bg-black bg-opacity-60 rounded-2xl mb-20'>
         <h1 className='text-4xl text-white m-10 font-mono'>{weather.name}{weather.sys.country ? `, ${weather.sys.country}` : '' }</h1>
         <div className='flex mb-10 flex-col items-center'>
           <h1 className='text-5xl m-3 md:mb-10 xl:mb-20 text-white'>{weather.main.temp}°C</h1>
