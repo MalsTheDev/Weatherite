@@ -63,10 +63,7 @@ function App() {
         </div>
       </div>
        : ''}
-
-       <div className={`flex items-center justify-center bg-neutral-800 w-full ${isWeather ? 'relative' : 'absolute bottom-0'}`}>
-          <h1 className='my-2 text-lg text-white font-bold'>Created by <a href="https://malsthedev.vercel.app" className='text-blue-400'>MalsTheDev</a></h1>
-       </div>
+        <h1 className='my-2 text-lg text-white font-bold bg-black bg-opacity-40 p-2 rounded-xl absolute right-0 bottom-0 m-5'>Created by <a href="https://malsthedev.vercel.app" className='text-blue-400'>MalsTheDev</a></h1>
     </div>
   )
   }
